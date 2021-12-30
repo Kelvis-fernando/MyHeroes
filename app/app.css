@@ -1,0 +1,76 @@
+/* Global Style */
+body {
+	font-family: monospace;
+	color: #333;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+/* End Global Style */
+
+
+/* Header Style */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  
+  background-color: #888;
+  height: 100px;
+}
+
+.logo-header {
+  color: #fff;
+  font-weight: bold;
+}
+
+.search {
+  width: 250px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+}
+/* End Header Style */
+
+
+/* Card Style */
+.container {
+	display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: center;
+	border: 1px solid #ccc;
+}
+
+
+.card {
+  height: 300px;
+  width: 250px;
+	margin: 10px;
+	font-size: 1.5em;
+
+	text-align: center;
+  box-shadow: 10px 5px 5px rgb(204, 204, 204);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 20px 10px 10px rgb(204, 204, 204);
+}
+
+.card-image {
+  height: 250px;
+  background: url('./assets/captain-america.png'),no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
