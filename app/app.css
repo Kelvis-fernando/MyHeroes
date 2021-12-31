@@ -64,9 +64,7 @@ ul {
 
 .card-image {
   height: 250px;
-  background: url('./assets/captain-america.png'),no-repeat;
-  background-size: cover;
-  background-position: center;
+  width: 100%;
 }
 
 .hero-name {
