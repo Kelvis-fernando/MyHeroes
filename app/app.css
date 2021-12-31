@@ -74,5 +74,38 @@ ul {
 /* End Card Style */
 
 /* Open Hero Card */
+.card-open-hero {
+  display: grid;
+  grid-template-columns: 300px 300px;
 
+  height: 100%;
+  width: 650px;
+	margin: 10px;
+	font-size: 1.5em;
+  
+  box-shadow: 10px 5px 5px rgb(204, 204, 204);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.card-open-hero:hover {
+  box-shadow: 20px 10px 10px rgb(204, 204, 204);
+}
+
+.card-image-open-hero {
+  height: 100%;
+  width: 100%;
+}
+
+.hero-stats {
+  text-align: center;
+  font-weight: bold;
+}
+
+.comics {
+  font-size: 0.8rem;
+  text-align: left;
+  margin-left: 40px;
+  
+}
 /* End Open Hero Card */

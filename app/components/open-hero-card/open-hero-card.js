@@ -19,8 +19,6 @@ angular.module('myApp.open-hero-card', ['ngRoute'])
     const baseUrl = 'http://gateway.marvel.com/v1/public/characters/';
 
     $http.get(baseUrl + characterId + '?ts=' + ts + '&apikey=' + publicKey + '&hash=' + hash).then((response) => {
-      $scope.hero = response.data.data.results; 
-      console.log(response.data.data.results);
+      $scope.hero = response.data.data.results;
     });
-    console.log('open');
   }]);
