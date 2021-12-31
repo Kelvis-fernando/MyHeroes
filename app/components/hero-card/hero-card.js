@@ -10,7 +10,6 @@ angular.module('myApp.hero-card', ['ngRoute'])
   .controller('HeroCtrl', ['$scope', '$http', function ($scope, $http) {
 
     $scope.searchHero = function () {
-      console.log('teste');
       let input = document.getElementById('searchbar').value
       input = input.toLowerCase();
       let heroName = document.getElementsByClassName('hero-name');

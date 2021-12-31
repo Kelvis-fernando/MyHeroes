@@ -2,7 +2,8 @@
     <div class="container" ng-controller="HeroCtrl" ng-repeat="heros in hero">
         <div class="card-open-hero">
             <div class="card-image-open-hero">
-                <img data-ng-src="{{heros.thumbnail.path + '.' + heros.thumbnail.extension}}" alt="Heroes" class="card-image-open-hero">
+                <img data-ng-src="{{heros.thumbnail.path + '.' + heros.thumbnail.extension}}" alt="Heroes"
+                    class="card-image-open-hero">
             </div>
             <div class="hero-stats" ng-if="!heros.description">
                 <div class="comics-list">
