@@ -4,6 +4,7 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.hero-card',
+  'myApp.open-hero-card',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {

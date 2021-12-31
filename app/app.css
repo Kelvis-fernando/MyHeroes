@@ -38,7 +38,7 @@ ul {
 
 /* Card Style */
 .container {
-	display: flex;
+  display: flex;
   flex-wrap: wrap;
   padding: 10px;
   justify-content: center;
@@ -51,7 +51,7 @@ ul {
   width: 250px;
 	margin: 10px;
 	font-size: 1.5em;
-
+  
 	text-align: center;
   box-shadow: 10px 5px 5px rgb(204, 204, 204);
   border-radius: 15px;
@@ -71,4 +71,8 @@ ul {
   font-weight: bold;
   margin-top: 10px;
 }
+/* End Card Style */
 
+/* Open Hero Card */
+
+/* End Open Hero Card */

@@ -1,0 +1,13 @@
+<div class="container" ng-controller="OpenCardHeroCtrl">
+    <div class="container" ng-controller="HeroCtrl" ng-repeat="heros in hero">
+        <div class="card">
+            <div class="card-image">
+                <img data-ng-src="{{heros.thumbnail.path + '.' + heros.thumbnail.extension}}" alt="Heroes" class="card-image">
+            </div>
+            <div class="hero-name">
+                {{heros.name}}
+            </div>
+        </div>
+    </div>
+    
+</div>

@@ -1,10 +1,11 @@
 <div class="container" ng-controller="HeroCtrl">
-	<div class="card" ng-repeat="comic in comics">
+    <div class="card" ng-repeat="comic in comics">
         <div class="card-image">
             <img data-ng-src="{{comic.thumbnail.path + '.' + comic.thumbnail.extension}}" alt="Heroes" class="card-image">
         </div>
         <div class="hero-name">
             {{comic.name}}
         </div>
+        <a ng-href="/#!/open-hero-card/{{comic.id}}">Ver Mais</a>
     </div>
 </div>
