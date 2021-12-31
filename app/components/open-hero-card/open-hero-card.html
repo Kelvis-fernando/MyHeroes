@@ -9,9 +9,17 @@
                 <hr>
                 <div class="comics-list">
                     <h5>Quadrinhos</h5>
-                    <ul class="comics">
+                    <ul class="lists">
                         <li ng-repeat="comics in heros.comics.items" >
                             {{comics.name}}
+                        </li>
+                    </ul>
+                </div>
+                <div class="stories-list">
+                    <h5>Historias</h5>
+                    <ul class="lists">
+                        <li ng-repeat="stories in heros.stories.items" >
+                            {{stories.name}}
                         </li>
                     </ul>
                 </div>

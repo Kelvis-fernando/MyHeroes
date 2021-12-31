@@ -47,7 +47,7 @@ ul {
 
 
 .card {
-  height: 300px;
+  height: 370px;
   width: 250px;
 	margin: 10px;
 	font-size: 1.5em;
@@ -71,6 +71,22 @@ ul {
   font-weight: bold;
   margin-top: 10px;
 }
+
+.see-more {
+  margin-top: 15px;
+}
+
+.see-more a {
+  text-decoration: none;
+  color: #000;
+  border: 2px solid #666;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.see-more a:hover {
+  background-color: rgb(201, 201, 201);
+}
 /* End Card Style */
 
 /* Open Hero Card */
@@ -79,7 +95,7 @@ ul {
   grid-template-columns: 300px 300px;
 
   height: 100%;
-  width: 650px;
+  width: 60%;
 	margin: 10px;
 	font-size: 1.5em;
   
@@ -98,14 +114,16 @@ ul {
 }
 
 .hero-stats {
+  display: grid;
+  grid-template-columns: 250px 250px;
+
   text-align: center;
   font-weight: bold;
 }
 
-.comics {
-  font-size: 0.8rem;
+.lists {
+  font-size: 0.7em;
   text-align: left;
   margin-left: 40px;
-  
 }
 /* End Open Hero Card */
