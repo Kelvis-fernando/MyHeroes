@@ -4,23 +4,27 @@
             <div class="card-image-open-hero">
                 <img data-ng-src="{{heros.thumbnail.path + '.' + heros.thumbnail.extension}}" alt="Heroes" class="card-image-open-hero">
             </div>
-            <div class="hero-name">
-                <h4>{{ heros.name }}</h4>
-            </div>
-            <div class="hero-stats">
+            <div class="hero-stats" ng-if="!heros.description">
                 <div class="comics-list">
-                    <h5>Quadrinhos</h5>
+                    <h4>{{ heros.name }}</h4>
+                    <h4>Quadrinhos</h4>
                     <ul class="lists">
-                        <li ng-repeat="comics in heros.comics.items" >
+                        <li ng-repeat="comics in heros.comics.items">
                             {{comics.name}}
                         </li>
                     </ul>
                 </div>
-                <div class="stories-list">
-                    <h5>Historias</h5>
+            </div>
+            <div class="hero-stats-description" ng-if="heros.description">
+                <div class="character">
+                    <h4>{{ heros.name }}</h4>
+                    <p class="hero-description">{{heros.description}}</p>
+                </div>
+                <div class="comics-list">
+                    <h4>Quadrinhos</h4>
                     <ul class="lists">
-                        <li ng-repeat="stories in heros.stories.items" >
-                            {{stories.name}}
+                        <li ng-repeat="comics in heros.comics.items">
+                            {{comics.name}}
                         </li>
                     </ul>
                 </div>
