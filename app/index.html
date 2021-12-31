@@ -12,9 +12,10 @@
   <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-  <div class="header">
+  <div class="header" ng-controller="HeroCtrl">
     <a href="/" class="logo-header">My Heroes!</a>
-    <input type="text" class="search" placeholder="Busque por um heroi....">
+    <input type="text" class="search" placeholder="Busque por um heroi...." id="searchbar" ng-keyup="searchHero()" type="text"
+    name="search">
   </div>
 
   <div ng-view></div>

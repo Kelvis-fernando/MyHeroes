@@ -1,13 +1,14 @@
 /* Global Style */
 body {
-	font-family: monospace;
-	color: #333;
+  font-family: monospace;
+  color: #333;
 }
 
 ul {
   margin: 0px;
   padding: 0px;
 }
+
 /* End Global Style */
 
 
@@ -17,7 +18,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  
+
   background-color: rgb(90, 34, 34);
   height: 100px;
 }
@@ -35,6 +36,7 @@ ul {
   border: none;
   border-radius: 10px;
 }
+
 /* End Header Style */
 
 
@@ -44,17 +46,17 @@ ul {
   flex-wrap: wrap;
   padding: 10px;
   justify-content: center;
-	border: 1px solid #ccc;
+  border: 1px solid #ccc;
 }
 
 
 .card {
   height: 370px;
   width: 250px;
-	margin: 10px;
-	font-size: 1.5em;
-  
-	text-align: center;
+  margin: 10px;
+  font-size: 1.5em;
+
+  text-align: center;
   box-shadow: 10px 5px 5px rgb(204, 204, 204);
   border-radius: 15px;
   cursor: pointer;
@@ -89,6 +91,7 @@ ul {
 .see-more a:hover {
   background-color: rgb(201, 201, 201);
 }
+
 /* End Card Style */
 
 /* Open Hero Card */
@@ -97,8 +100,8 @@ ul {
   color: #fff;
   height: 100%;
   width: 60%;
-	font-size: 1.5em;
-  
+  font-size: 1.5em;
+
   box-shadow: 10px 5px 5px rgb(204, 204, 204);
   border-radius: 15px;
   cursor: pointer;
@@ -130,4 +133,30 @@ ul {
   text-align: left;
   margin-left: 40px;
 }
+
 /* End Open Hero Card */
+
+/* Search Input */
+#searchbar {
+  margin-left: 15%;
+  border-radius: 10px;
+}
+
+input[type=text] {
+  width: 30%;
+  -webkit-transition: width 0.15s ease-in-out;
+  transition: width 0.15s ease-in-out;
+}
+
+/* When the input field gets focus,
+     change its width to 100% */
+input[type=text]:focus {
+  width: 40%;
+}
+
+#list {
+  font-size: 1.5em;
+  margin-left: 90px;
+}
+
+/* End Search Input */
