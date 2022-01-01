@@ -7,18 +7,8 @@ angular.module('myApp', [
   'myApp.open-hero-card',
   'myApp.version'
 ]).
-  config(['$locationProvider', '$routeProvider', "$stateProvider", "$urlRouterProvider", function ($locationProvider, $routeProvider, $urlRouterProvider, $stateProvider) {
+  config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
     $locationProvider.hashPrefix('!');
-
-    $urlRouterProvider.otherwise("/");
-    $stateProvider
-      .state("home", {
-        url: "/",
-        templateUrl: "index.html",
-        controller: "HeroCtrl",
-        controllerAs: "HeroCtrl",
-        authenticationReqired: false
-      });
 
     $routeProvider.otherwise({ redirectTo: '/' });
   }]);
