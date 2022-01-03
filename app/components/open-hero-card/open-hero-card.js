@@ -16,7 +16,7 @@ angular.module('myApp.open-hero-card', ['ngRoute'])
     const privateKey = 'fbf255068eccea6d0ef951b9f25626b57ab2fe72';
     const hash = MD5(ts + privateKey + publicKey);
     const characterId = $routeParams.id;
-    const baseUrl = 'http://gateway.marvel.com/v1/public/characters/';
+    const baseUrl = 'https://gateway.marvel.com/v1/public/characters/';
 
     $http.get(baseUrl + characterId + '?ts=' + ts + '&apikey=' + publicKey + '&hash=' + hash).then((response) => {
       $scope.hero = response.data.data.results;

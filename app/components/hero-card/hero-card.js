@@ -32,7 +32,7 @@ angular.module('myApp.hero-card', ['ngRoute'])
     const publicKey = '5a237863b3cc2061003cbbc4fe20dc06';
     const privateKey = 'fbf255068eccea6d0ef951b9f25626b57ab2fe72';
     const hash = MD5(ts + privateKey + publicKey);
-    const baseUrl = 'http://gateway.marvel.com/v1/public/characters?ts='
+    const baseUrl = 'https://gateway.marvel.com/v1/public/characters?ts='
 
     $http.get(baseUrl + ts + '&apikey=' + publicKey + '&hash=' + hash).then((response) => {
       $scope.comics = response.data.data.results;
