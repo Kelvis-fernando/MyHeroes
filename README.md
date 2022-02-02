@@ -2,6 +2,8 @@
 
 Este e um projeto feito em angularJS, consumindo a API da marvel mostrando os herois disponiveis e mais alguns dados fornecidos pela API, e o usuario tambem consegue fazer o filtro pelo nome do heroi.
 
+link para o deploy do projeto: https://my-heros-app-act.herokuapp.com/#!/
+
 ## 🚀 Começando
 
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
