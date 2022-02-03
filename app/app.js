@@ -5,7 +5,8 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.hero-card',
   'myApp.open-hero-card',
-  'myApp.version'
+  'myApp.version',
+  'myApp.service'
 ]).
   config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
     $locationProvider.hashPrefix('!');
